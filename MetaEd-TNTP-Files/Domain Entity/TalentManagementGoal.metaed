@@ -1,0 +1,14 @@
+Domain Entity TalentManagementGoal
+    documentation 'Talent management goal(s) for education organization.
+    shared string GoalTitle named GoalTitle
+        documentation 'The title or description of the goal.
+        is part of identity
+    shared decimal GoalValue named GoalValue
+        documentation 'The target value for the goal.
+        is required
+    enumeration SchoolYear
+        documentation 'The school year the Staff evaluation is applied.
+        is part of identity
+    reference EducationOrganization
+        documentation 'The Education Organization(s) associated with the talent management goals.
+        is required collection

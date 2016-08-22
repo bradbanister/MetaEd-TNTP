@@ -1,0 +1,8 @@
+Descriptor OpenStaffPositionEventStatus
+    documentation 'The descriptor holds the status of the milestone (e.g., pending, completed, cancelled).
+    with optional map type
+        documentation 'Map for the status of the milestone (e.g., pending, completed, cancelled).
+        item Approved
+            documentation '*NONE*
+        item Pending
+            documentation '*NONE*

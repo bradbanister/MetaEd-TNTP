@@ -1,0 +1,10 @@
+Descriptor ApplicationEventResult
+    documentation 'The descriptor holds the recommendation, result or conclusion of the application event (e.g., Continue, exit, recommend for hire).
+    with optional map type
+        documentation 'Map for the recommendation, result or conclusion of the application event (e.g., Continue, exit, recommend for hire).
+        item NA
+            documentation '*NONE*
+        item Advance
+            documentation '*NONE*
+        item Screen out
+            documentation '*NONE*

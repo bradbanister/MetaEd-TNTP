@@ -1,0 +1,20 @@
+Descriptor ApplicationSource
+    documentation 'The descriptor holds the source for the application (e.g., Job fair, website, referral).
+    with optional map type
+        documentation 'Map for the source for the application (e.g., Job fair, website, referral).
+        item Email
+            documentation '*NONE*
+        item Employee
+            documentation '*NONE*
+        item Internet
+            documentation '*NONE*
+        item Job Fair
+            documentation '*NONE*
+        item Other
+            documentation '*NONE*
+        item Print
+            documentation '*NONE*
+        item Radio
+            documentation '*NONE*
+        item Word of Mouth
+            documentation '*NONE*

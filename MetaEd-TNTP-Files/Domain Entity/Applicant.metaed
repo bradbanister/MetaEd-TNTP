@@ -1,0 +1,85 @@
+Domain Entity Applicant
+    documentation 'A person who makes a formal application for an OpenStaffPosition.
+    shared string ApplicantIdentifier named ApplicantIdentifier
+        documentation 'Identifier assigned to a person making formal application for an open staff position.
+        is part of identity
+        is queryable field
+    reference EducationOrganization
+        documentation 'The education organization, typically a LocalEducationAgency, associated with the applicant.
+        is part of identity
+    include StaffIdentificationCode
+        documentation 'A unique number or alphanumeric code assigned to an applicant by a school, school system, a state, or other agency or entity.
+        is optional collection
+        is queryable field
+    include Name
+        documentation 'Full legal name of the person.
+        is required
+        is queryable field
+    enumeration Sex
+        documentation 'A person's gender.
+        is optional
+        is queryable field
+    date BirthDate
+        documentation 'The month, day, and year on which an individual was born.
+        is optional
+        is queryable field
+    include Address
+        documentation 'The set of elements that describes an address, including the street address, city, state, and ZIP code.
+        is optional collection
+    include InternationalAddress
+        documentation 'The set of elements that describes an international address.
+        is optional collection
+    include Telephone
+        documentation 'The 10-digit telephone number, including the area code, for the person.
+        is optional collection
+        is queryable field
+    include ElectronicMail
+        documentation 'The numbers, letters, and symbols used to identify an electronic mail (e-mail) user within the network to which the individual or organization belongs.
+        is optional collection
+        is queryable field
+    bool HispanicLatinoEthnicity
+        documentation 'An indication that the individual traces his or her origin or descent to Mexico, Puerto Rico, Cuba, Central, and South America, and other Spanish cultures, regardless of race. The term, "Spanish origin," can be used in addition to "Hispanic or Latino".
+        is optional
+        is queryable field
+    enumeration Race
+        documentation 'The general racial category which most clearly reflects the individual's recognition of his or her community or with which the individual most identifies. The way this data element is listed, it must allow for multiple entries so that each individual can specify all appropriate races.
+        is optional collection
+        is queryable field
+    include Citizenship
+        documentation 'Contains information relative to citizenship status and its associated probationary documentation.
+        is optional
+    include Language
+        documentation 'The language(s) the individual uses to communicate.
+        is optional collection
+    descriptor LevelOfEducation
+        documentation 'The extent of formal instruction an individual has received (e.g., the highest grade in school completed or its equivalent or the highest degree received).
+        is optional
+        with context HighestCompleted
+    shared decimal NumberOfYears named YearsOfPriorProfessionalExperience
+        documentation 'The total number of years that an individual has previously held a similar professional position in one or more education institutions.
+        is optional
+     shared decimal NumberOfYears named YearsOfPriorTeachingExperience
+        documentation 'The total number of years that an individual has previously held a teaching position in one or more education institutions.
+        is optional
+    shared string IdentificationCode named LoginId
+        documentation 'The login ID for the user; used for security access control interface.
+        is optional
+    bool HighlyQualifiedTeacher
+        documentation 'An indication of whether a teacher is classified as highly qualified for his/her assignment according to state definition. This attribute indicates the teacher is highly qualified for ALL Sections being taught.
+        is optional
+    include Credential
+        documentation 'The legal document or authorization giving authorization to perform teaching assignment services.
+        is optional collection
+    include BackgroundCheck
+        documentation 'Applicant background check history and disposition.
+        is optional collection
+    descriptor AcademicSubject
+        documentation 'The academic subject(s) in which the staff is deemed to be "highly qualified".
+        is optional
+        with context HighlyQualified
+    include TeacherPreparationProgram
+        documentation 'The Teacher Preparation Program(s) completed by the teacher.
+        is optional collection
+    reference Prospect
+        documentation 'Reference to previously identified prospect.
+        is optional

@@ -1,0 +1,36 @@
+Descriptor ApplicationStatus
+    documentation 'The descriptor holds the current status of the application (e.g., received, phone screen, interview, awaiting decision, etc.).
+    with optional map type
+        documentation 'Map for the current status of the application (e.g., received, phone screen, interview, awaiting decision, etc.).
+        item Accepted
+            documentation '*NONE*
+        item Candidate Pool
+            documentation '*NONE*
+        item Extended
+            documentation '*NONE*
+        item In Progress
+            documentation '*NONE*
+        item Interview
+            documentation '*NONE*
+        item No response
+            documentation '*NONE*
+        item Phone Interview
+            documentation '*NONE*
+        item Pre-screened
+            documentation '*NONE*
+        item Recommendations
+            documentation '*NONE*
+        item Rejected
+            documentation '*NONE*
+        item Sample Lesson
+            documentation '*NONE*
+        item School Visit
+            documentation '*NONE*
+        item Selected
+            documentation '*NONE*
+        item Submitted
+            documentation '*NONE*
+        item Video
+            documentation '*NONE*
+        item Withdrawn
+            documentation '*NONE*

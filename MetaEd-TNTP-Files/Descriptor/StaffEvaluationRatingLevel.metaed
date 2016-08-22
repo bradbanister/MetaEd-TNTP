@@ -1,0 +1,22 @@
+Descriptor StaffEvaluationRatingLevel
+    documentation 'The descriptor holds the rating level achieved based upon the rating or score.
+    with optional map type
+        documentation 'Map for the rating level achieved based upon the rating or score.
+        item Ineffective
+            documentation '*NONE*
+        item Minimally Effective
+            documentation '*NONE*
+        item Developing
+            documentation '*NONE*
+        item Effective
+            documentation '*NONE*
+        item Highly Effective
+            documentation '*NONE*
+        item Accomplished
+            documentation '*NONE*
+        item Skilled
+            documentation '*NONE*
+        item Demonstrated
+            documentation '*NONE*
+        item Not Demonstrated
+            documentation '*NONE*

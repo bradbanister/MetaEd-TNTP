@@ -1,0 +1,15 @@
+Common Type SurveyQuestionMatrixElementResponse
+    documentation 'For matrix questions, the response for each row of the matrix.
+    shared string MatrixElement named MatrixElement
+        documentation 'For matrix questions, the text identifying each row of the matrix.
+        is part of identity
+    bool NoResponse
+        documentation 'Indicates there was no response to the question.
+        is optional
+    shared integer NumericResponse named NumericResponse
+        documentation 'The numeric response to the question.
+        is optional
+    shared string TextResponse named TextResponse
+        documentation 'The text response(s) for the question.
+        is optional
+

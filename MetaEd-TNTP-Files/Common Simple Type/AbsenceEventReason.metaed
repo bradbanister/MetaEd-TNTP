@@ -1,0 +1,4 @@
+Common String AbsenceEventReason
+    documentation 'Expanded reason for the staff absence.
+    min length 1
+    max length 255

@@ -1,0 +1,4 @@
+Common String Notes
+    documentation 'Additional notes about the prospect.
+    min length 1
+    max length 255

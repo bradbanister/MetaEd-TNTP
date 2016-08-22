@@ -1,0 +1,24 @@
+Descriptor SurveyCategory
+    documentation 'The descriptor holds the category or type of survey.
+    with optional map type
+        documentation 'Map for the category or type of survey.
+        item Administrator
+            documentation '*NONE*
+        item Applicant 
+            documentation '*NONE*
+        item Community
+            documentation '*NONE*
+        item District
+            documentation '*NONE*
+        item Exit
+            documentation '*NONE*
+        item Other
+            documentation '*NONE*
+        item Parent
+            documentation '*NONE*
+        item Principal
+            documentation '*NONE*
+        item Student
+            documentation '*NONE*
+        item Teacher
+            documentation '*NONE*

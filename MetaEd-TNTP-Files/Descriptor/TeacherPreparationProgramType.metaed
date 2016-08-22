@@ -1,0 +1,10 @@
+Descriptor TeacherPreparationProgramType
+    documentation 'The descriptor holds the type of teacher prep program (e.g., college, alternative, TFA, etc.).
+    with optional map type
+        documentation 'Map for the type of teacher prep program (e.g., college, alternative, TFA, etc.).
+        item Alternate
+            documentation '*NONE*
+        item Other
+            documentation '*NONE*
+        item Traditional
+            documentation '*NONE*

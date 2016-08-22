@@ -1,0 +1,4 @@
+Common String SurveyTitle
+    documentation 'The title of the survey.
+    min length 1
+    max length 50

@@ -1,0 +1,14 @@
+Descriptor WithdrawReason
+    documentation 'The descriptor holds the reason applicant withdrew application.
+    with optional map type
+        documentation 'Map for the reason applicant withdrew application.
+        item Displeased
+            documentation '*NONE*
+        item Dropped out
+            documentation '*NONE*
+        item Hired Elsewhere
+            documentation '*NONE*
+        item Not Eligible
+            documentation '*NONE*
+        item Unknown
+            documentation '*NONE*

@@ -1,0 +1,20 @@
+Domain Entity Survey
+    documentation 'A survey to identified or anonymous respondants.
+    shared string SurveyIdentifier named SurveyIdentifier
+        documentation 'The unique survey identifier from the survey tool.
+        is part of identity
+    reference EducationOrganization
+        documentation 'The Education Organization(s) associated with the survey.
+        is required
+    shared string SurveyTitle named SurveyTitle
+        documentation 'The title of the survey.
+        is required
+    enumeration SchoolYear
+        documentation 'The school year associated with the survey.
+        is required
+    descriptor Term
+        documentation 'The Term the survey was given.
+        is optional
+    descriptor SurveyCategory
+        documentation 'The Category or Type of Survey.
+        is optional

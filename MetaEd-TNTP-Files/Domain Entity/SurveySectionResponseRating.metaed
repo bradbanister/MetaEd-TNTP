@@ -1,0 +1,11 @@
+Domain Entity SurveySectionResponseRating
+    documentation 'Optional numeric rating computed from the survey responses for the section.
+    shared decimal SectionRating named SectionRating
+        documentation 'Numeric rating computed from the survey responses for the section.
+        is required
+    reference SurveySection
+        documentation 'Reference to the survey section.
+        is part of identity
+    reference SurveyResponse
+        documentation 'Reference to the Survey Response.
+        is part of identity

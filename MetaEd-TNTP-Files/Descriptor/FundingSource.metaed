@@ -1,0 +1,12 @@
+Descriptor FundingSource
+    documentation 'The descriptor holds the funding source (e.g., federal, district).
+    with optional map type
+        documentation 'Map for the funding source (e.g., federal, district).
+        item District
+            documentation '*NONE*
+        item Federal
+            documentation '*NONE*
+        item Other
+            documentation '*NONE*
+        item State
+            documentation '*NONE*

@@ -1,0 +1,8 @@
+Descriptor EmploymentSeparationType
+    documentation 'The descriptor holds the type of separation (e.g., termination, displacement, retirement, transfer, voluntary departure).
+    with optional map type
+        documentation 'Map for the type of separation (e.g., termination, displacement, retirement, transfer, voluntary departure).
+    item Involuntary
+        documentation '*NONE*
+    item Voluntary
+        documentation '*NONE*

@@ -1,0 +1,18 @@
+Descriptor HireStatus
+    documentation 'The descriptor holds the current status of the application for hire (e.g., applied, recommended, rejected, exited, offered, hired).
+    with optional map type
+        documentation 'Map for the current status of the application for hire (e.g., applied, recommended, rejected, exited, offered, hired).
+        item Applied
+            documentation '*NONE*
+        item Hired
+            documentation '*NONE*
+        item Not Accepted
+            documentation '*NONE*
+        item Offered
+            documentation '*NONE*
+        item Recommended
+            documentation '*NONE*
+        item Rejected
+            documentation '*NONE*
+        item Withdrawn
+            documentation '*NONE*

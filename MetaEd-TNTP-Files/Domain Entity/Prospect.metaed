@@ -1,0 +1,68 @@
+Domain Entity Prospect
+    documentation 'A prospect for employment or contract that has not yet made formal application, often obtained from job fairs or university recruiting visits.
+    shared string ProspectIdentifier named ProspectIdentifier
+        documentation 'The identifier for the prospect.
+        is part of identity
+        is queryable field
+    reference EducationOrganization
+        documentation 'The education organization, typically a LocalEducationAgency, associated with the prospect.
+        is part of identity
+        is queryable field
+    include Name
+        documentation 'Full legal name of the person.
+        is required
+        is queryable field
+    shared string ElectronicMailAddress named ElectronicMailAddress
+        documentation 'The numbers, letters, and symbols used to identify an electronic mail (e-mail) user within the network to which the individual or organization belongs.
+        is required
+        is queryable field
+    bool Applied
+        documentation 'Indicator of whether the prospect applied for a position.
+        is optional
+    include CurrentPosition
+        documentation 'The current position of the prospect.
+        is optional
+    bool HispanicLatinoEthnicity
+        documentation 'An indication that the individual traces his or her origin or descent to Mexico, Puerto Rico, Cuba, Central, and South America, and other Spanish cultures, regardless of race. The term, "Spanish origin," can be used in addition to "Hispanic or Latino".
+        is optional
+        is queryable field
+    bool Met
+        documentation 'Indicator whether the person was met by a representative of the education organization.
+        is optional
+    shared string Notes named Notes
+        documentation 'Additional notes about the prospect.
+        is optional
+    integer PreScreeningRating
+        documentation 'The rating initially assigned to the prospect prior to an official screening.
+        is optional
+    enumeration Race
+        documentation 'The general racial category which most clearly reflects the individual's recognition of his or her community or with which the individual most identifies. The way this data element is listed, it must allow for multiple entries so that each individual can specify all appropriate races.
+        is optional collection
+        is queryable field
+    reference RecruitmentEvent
+        documentation 'Reference(s) to events associated with the recruitment process.
+        is optional collection
+    bool Referral
+        documentation 'Indicator of whether the prospect was a referral.
+        is optional
+    shared string ReferredBy named ReferredBy
+        documentation 'The person making the referral.
+        is optional
+    enumeration Sex
+        documentation 'A person's gender.
+        is optional
+        is queryable field
+    shared string SocialMediaUserName named SocialMediaUserName
+        documentation 'The user name of the person on social media.
+        is optional
+    shared string SocialMediaNetworkName named SocialMediaNetworkName
+        documentation 'The social media network name (e.g., LinkedIn, Twitter, etc.) associated with the SocialMediaUserName.
+        is optional
+    include Telephone
+        documentation 'The 10-digit telephone number, including the area code, for the person.
+        is optional collection
+        is queryable field
+    include Touchpoint
+        documentation 'Content associated with different touchpoints with the prospect.
+        is optional collection
+

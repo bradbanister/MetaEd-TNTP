@@ -1,0 +1,4 @@
+Common String EvaluationElement
+    documentation 'The name or description of the element being evaluated.
+    min length 1
+    max length 255

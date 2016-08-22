@@ -1,0 +1,16 @@
+Descriptor BackgroundCheckStatus
+    documentation 'This descriptor holds the  status of the background check (e.g., pending, under investigation, offense(s) found, etc.).
+    with optional map type
+        documentation 'The status of the background check (e.g., pending, under investigation, offense(s) found, etc.).
+        item Eligible
+            documentation '*NONE*
+        item Employer Review
+            documentation '*NONE*
+        item Not Eligible
+            documentation '*NONE*
+        item Started
+            documentation '*NONE*
+        item Submitted
+            documentation '*NONE*
+        item Waiting
+            documentation '*NONE*

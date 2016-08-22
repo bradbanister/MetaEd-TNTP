@@ -1,0 +1,24 @@
+Domain Entity Staff additions
+    include BackgroundCheck
+        documentation 'Staff background check history and disposition.
+        is optional collection
+    descriptor AcademicSubject
+        documentation 'The academic subject(s) in which the staff is deemed to be "highly qualified".
+        is optional collection
+        with context HighlyQualified
+    date ProbationCompleteDate
+        documentation 'The date the probation period ended or is scheduled to end.
+        is optional
+    include Seniority
+        documentation 'Entries of job experience contributing to computations of seniority.
+        is optional collection
+    include TeacherPreparationProgram
+        documentation 'The Teacher Preparation Program(s) completed by the teacher.
+        is optional collection
+    bool Tenured
+        documentation 'Indicator of whether the staff member is tenured.
+        is optional
+    reference Applicant
+        documentation 'Reference to applicant(s) represented by this staff member.
+        is optional collection
+

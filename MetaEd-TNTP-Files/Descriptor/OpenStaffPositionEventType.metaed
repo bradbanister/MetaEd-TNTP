@@ -1,0 +1,14 @@
+Descriptor OpenStaffPositionEventType
+    documentation 'The descriptor holds the milestones like vacancy approved, vacancy posted, date onboarded. processing date, orientation date  etc.
+    with optional map type
+        documentation 'Map for the milestones like vacancy approved, vacancy posted, date onboarded. processing date, orientation date  etc.
+        item Closed
+            documentation '*NONE*
+        item Declared
+            documentation '*NONE*
+        item Filled
+            documentation '*NONE*
+        item Posted
+            documentation '*NONE*
+        item Withdrawn
+            documentation '*NONE*

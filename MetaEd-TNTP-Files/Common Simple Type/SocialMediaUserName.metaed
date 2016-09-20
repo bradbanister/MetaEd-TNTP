@@ -1,4 +1,0 @@
-Common String SocialMediaUserName
-    documentation 'The user name of the person on social media.
-    min length 1
-    max length 50

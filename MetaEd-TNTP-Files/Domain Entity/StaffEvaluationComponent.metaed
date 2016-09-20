@@ -9,9 +9,6 @@ Domain Entity StaffEvaluationComponent
     shared decimal StaffRating named MinRating
         documentation 'The minimum rating for the scale used for the Evaluation Component, if different from the overall staff evaluation.
         is optional
-    shared string RubricReference named RubricReference
-        documentation 'The reference to rubric title or identifier.
-        is optional
     descriptor StaffEvaluationType
         documentation 'The type of the staff evaluation (e.g., observation, principal, peer, student survey, student growth).
         is optional

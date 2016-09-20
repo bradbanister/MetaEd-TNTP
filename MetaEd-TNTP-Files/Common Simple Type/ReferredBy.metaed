@@ -1,4 +1,0 @@
-Common String ReferredBy
-    documentation 'The person making the referral.
-    min length 1
-    max length 50

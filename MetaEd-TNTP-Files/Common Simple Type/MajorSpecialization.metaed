@@ -1,4 +1,0 @@
-Common String MajorSpecialization
-    documentation 'The major area for a degree or area of specialization for a certificate.
-    min length 1
-    max length 75

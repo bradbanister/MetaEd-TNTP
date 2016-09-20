@@ -1,4 +1,0 @@
-Common String ProspectIdentifier
-    documentation 'Identifier assigned to a prospect for employment or contract.
-    min length 1
-    max length 32

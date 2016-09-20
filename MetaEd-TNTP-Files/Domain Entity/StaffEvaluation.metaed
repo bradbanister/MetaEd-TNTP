@@ -1,17 +1,16 @@
 Domain Entity StaffEvaluation
     documentation 'A staff evaluation instrument applied by an education organization.
-    shared string StaffEvaluationTitle named StaffEvaluationTitle
+    string StaffEvaluationTitle
         documentation 'The name or title of the staff evaluation.
         is part of identity
-        is queryable field
+        min length 1
+        max length 50        
     enumeration SchoolYear
         documentation 'The school year the Staff evaluation is applied.
         is part of identity
-        is queryable field
     reference EducationOrganization
         documentation 'The EducationOrganization administering the staff evaluation instrument.
         is part of identity
-        is queryable field
     shared decimal StaffRating named MaxRating 
         documentation 'The maximum summary numerical rating or score for the staff evaluation.
         is required
@@ -21,11 +20,9 @@ Domain Entity StaffEvaluation
     descriptor StaffEvaluationPeriod
         documentation 'The period for the staff evaluation (e.g., BOY, MOY, EOY, Summer).
         is optional
-        is queryable field
     descriptor StaffEvaluationType
         documentation 'The type of the staff evaluation (e.g., observation, principal, peer, student survey, student growth).
         is optional
-        is queryable field
     include StaffRatingLevel
         documentation 'The descriptive level(s) of ratings (cut scores) for staff evaluation.
         is optional collection

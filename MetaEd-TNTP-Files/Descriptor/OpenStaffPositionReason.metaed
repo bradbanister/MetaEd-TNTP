@@ -1,8 +1,0 @@
-Descriptor OpenStaffPositionReason
-    documentation 'The descriptor holds the reason for the open staff position (e.g., new position, replacement, etc.).
-    with optional map type
-        documentation 'Map for the reason for the open staff position (e.g., new position, replacement, etc.).
-        item New
-            documentation '*NONE*
-        item Replacement
-            documentation '*NONE*

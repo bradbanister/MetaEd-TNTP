@@ -1,4 +1,0 @@
-Common String ApplicationIdentifier
-    documentation 'Identifier assigned to the application for an open staff position.
-    min length 1
-    max length 20

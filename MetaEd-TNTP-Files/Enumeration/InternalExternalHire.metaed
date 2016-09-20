@@ -1,6 +1,0 @@
-Enumeration InternalExternalHire
-    documentation 'Indicates whether the hire was an internal or external person.
-    item External
-        documentation '*NONE*
-    item Internal
-        documentation '*NONE*

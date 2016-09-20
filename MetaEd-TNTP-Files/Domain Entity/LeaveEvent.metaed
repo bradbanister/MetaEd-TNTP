@@ -1,5 +1,0 @@
-Domain Entity LeaveEvent additions
-    date EndDate
-        documentation 'The end date for the leave.
-        is optional
-

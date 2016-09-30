@@ -1,8 +1,10 @@
 Domain Entity StaffEvaluationComponent
     documentation 'The components of the evaluation.
-    shared string EvaluationComponent named EvaluationComponent
+    string EvaluationComponent
         documentation 'The Evaluation Component (e.g., Preparation, classroom control, delivery of instruction, etc.).
         is part of identity
+        min length 1
+        max length 50
     shared decimal StaffRating named MaxRating
         documentation 'The max rating for the scale used for the Evaluation Component, if different from the overall staff evaluation.
         is required

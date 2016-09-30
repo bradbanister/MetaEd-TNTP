@@ -6,9 +6,6 @@ Domain Entity StaffEvaluationRating
     date StaffEvaluationDate
         documentation 'The date for the staff evaluation.
         is part of identity
-    descriptor StaffEvaluationRatingLevel
-        documentation 'The rating level achieved based upon the rating or score.
-        is optional
     reference Staff
         documentation 'The staff member evaluated.
         is part of identity
